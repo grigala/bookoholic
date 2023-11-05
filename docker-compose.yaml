@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  surrealdb:
+    image: surrealdb/surrealdb:latest
+    env_file:
+      - .env
+    entrypoint:
+      - /surreal
+      - start
+      - --user
+      - $DB_USER
+      - --pass
+      - $DB_PASSWORD
+    ports:
+      - 8000:8000
