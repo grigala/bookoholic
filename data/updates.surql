@@ -1,0 +1,1 @@
+# MySQL -> SurrealDB transformed table creation for updates
